@@ -15,7 +15,7 @@ class TestViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
-        NotificationCenter.default.addObserver(self, selector: #selector(updateName), name: NSNotification.Name("testComplete"), object: LoadingViewController.self)
+        NotificationCenter.default.addObserver(self, selector: #selector(updateName), name: .testComplete, object: LoadingViewController.self)
     }
     //MARK: - Actions
 

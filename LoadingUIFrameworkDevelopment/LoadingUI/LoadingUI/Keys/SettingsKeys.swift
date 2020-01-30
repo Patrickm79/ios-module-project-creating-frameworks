@@ -8,6 +8,6 @@
 
 import Foundation
 
-extension NSNotification.Name {
+public extension NSNotification.Name {
     static let testComplete = NSNotification.Name("testComplete")
 }
