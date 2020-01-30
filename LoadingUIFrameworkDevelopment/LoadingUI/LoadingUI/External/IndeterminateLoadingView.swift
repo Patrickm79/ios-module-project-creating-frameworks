@@ -7,18 +7,26 @@
 //
 
 import UIKit
+import Foundation
 
 class IndeterminateLoadingView: UIView, CAAnimationDelegate {
 
+    
+    // MARK: - Properties
+    
+    private(set) var isAnimating = false
+    private let shapeLayer = CAShapeLayer()
+    private let duration = 1.0
+    private var shouldStopAnimationOnNextCycle = false
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         setupShapeLayer()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
         setupShapeLayer()
     }
     
@@ -96,12 +104,4 @@ class IndeterminateLoadingView: UIView, CAAnimationDelegate {
             startAnimation(for: "strokeEnd", timing: .easeIn)
         }
     }
-    
-    // MARK: - Properties
-    
-    private(set) var isAnimating = false
-
-    private let shapeLayer = CAShapeLayer()
-    private let duration = 1.0
-    private var shouldStopAnimationOnNextCycle = false
 }
