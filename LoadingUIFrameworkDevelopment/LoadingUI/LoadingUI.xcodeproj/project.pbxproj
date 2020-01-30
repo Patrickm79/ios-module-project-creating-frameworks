@@ -10,6 +10,7 @@
 		DB3A03D823E363B10030BD0E /* PolarPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3A03D723E363B10030BD0E /* PolarPoint.swift */; };
 		DB3A03DA23E363D80030BD0E /* IndeterminateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3A03D923E363D80030BD0E /* IndeterminateLoadingView.swift */; };
 		DB3A03DC23E364030030BD0E /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3A03DB23E364030030BD0E /* LoadingViewController.swift */; };
+		DB3A03E923E388280030BD0E /* SettingsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3A03E823E388280030BD0E /* SettingsKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		DB3A03D723E363B10030BD0E /* PolarPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolarPoint.swift; sourceTree = "<group>"; };
 		DB3A03D923E363D80030BD0E /* IndeterminateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndeterminateLoadingView.swift; sourceTree = "<group>"; };
 		DB3A03DB23E364030030BD0E /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		DB3A03E823E388280030BD0E /* SettingsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		DB3A03C523E363410030BD0E /* LoadingUI */ = {
 			isa = PBXGroup;
 			children = (
+				DB3A03E723E388070030BD0E /* Keys */,
 				DB3A03DB23E364030030BD0E /* LoadingViewController.swift */,
 				DB3A03DD23E364DC0030BD0E /* External */,
 				DB3A03C723E363410030BD0E /* Info.plist */,
@@ -64,6 +67,14 @@
 				DB3A03D923E363D80030BD0E /* IndeterminateLoadingView.swift */,
 			);
 			path = External;
+			sourceTree = "<group>";
+		};
+		DB3A03E723E388070030BD0E /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				DB3A03E823E388280030BD0E /* SettingsKeys.swift */,
+			);
+			path = Keys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 			files = (
 				DB3A03D823E363B10030BD0E /* PolarPoint.swift in Sources */,
 				DB3A03DA23E363D80030BD0E /* IndeterminateLoadingView.swift in Sources */,
+				DB3A03E923E388280030BD0E /* SettingsKeys.swift in Sources */,
 				DB3A03DC23E364030030BD0E /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

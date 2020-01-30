@@ -33,6 +33,7 @@ public class LoadingViewController: UIViewController {
         animationView.startAnimating()
         DispatchQueue.main.asyncAfter(deadline: .now() + 8.0) {
             self.animationView.stopAnimating()
+            NotificationCenter.default.post(name: .testComplete, object: LoadingViewController.self)
             self.dismiss(animated: true)
         }
     }
